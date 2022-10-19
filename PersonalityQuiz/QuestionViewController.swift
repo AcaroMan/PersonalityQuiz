@@ -102,7 +102,7 @@ class QuestionViewController: UIViewController {
     }
     
     func nextQuestion(){
-        questionsIndex += 1
+        questionIndex += 1
         if(questionIndex<questions.count){
             updateUI()
         }
