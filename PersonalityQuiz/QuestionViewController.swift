@@ -34,16 +34,6 @@ class QuestionViewController: UIViewController {
     
     var questions : [Question] = [
         Question (
-            text: "A very interesting question",
-            type: .ranged,
-            answers: [
-                Answer(text: "1", type: .hydroHomie),
-                Answer(text: "2", type: .casualDrinker),
-                Answer(text: "3", type: .alcoholLover),
-                Answer(text: "4", type: .anonAlcoholic),
-            ]
-        ),
-        Question (
             text: "What is your favourite beverage?",
             type: .single,
             answers: [
@@ -62,7 +52,17 @@ class QuestionViewController: UIViewController {
                 Answer(text: "Tavern", type: .alcoholLover),
                 Answer(text: "House", type: .anonAlcoholic)
             ]
-        )
+        ),
+        Question (
+            text: "A very interesting question",
+            type: .ranged,
+            answers: [
+                Answer(text: "1", type: .hydroHomie),
+                Answer(text: "2", type: .casualDrinker),
+                Answer(text: "3", type: .alcoholLover),
+                Answer(text: "4", type: .anonAlcoholic),
+            ]
+        ),
     ]
     
     var questionIndex = 0
