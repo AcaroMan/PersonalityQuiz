@@ -95,7 +95,6 @@ class QuestionViewController: UIViewController {
             break
         }
         nextQuestion()
-    
     }
     
     @IBAction func multipleAnswerButtonPressed() {
@@ -116,7 +115,7 @@ class QuestionViewController: UIViewController {
         nextQuestion()
     }
     
-    
+
 
     func nextQuestion(){
         questionIndex += 1
