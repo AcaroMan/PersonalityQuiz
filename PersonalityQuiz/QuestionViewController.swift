@@ -25,6 +25,10 @@ class QuestionViewController: UIViewController {
     @IBOutlet weak var multiLabel3: UILabel!
     @IBOutlet weak var multiLabel4: UILabel!
     
+    @IBOutlet weak var multiSwitch1: UISwitch!
+    @IBOutlet weak var multiSwitch2: UISwitch!
+    @IBOutlet weak var multiSwitch3: UISwitch!
+    @IBOutlet weak var multiSwitch4: UISwitch!
     
     @IBOutlet weak var rangedStackView: UIStackView!
     @IBOutlet weak var rangedLabel1: UILabel!
@@ -93,6 +97,10 @@ class QuestionViewController: UIViewController {
         nextQuestion()
     
     }
+    
+    @IBAction func multipleAnswerButtonPressed() {
+    }
+    
     func nextQuestion(){
         questionsIndex += 1
         if(questionIndex<questions.count){

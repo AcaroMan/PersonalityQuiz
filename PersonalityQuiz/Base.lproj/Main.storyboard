@@ -155,6 +155,9 @@
                                         <rect key="frame" x="0.0" y="204" width="354" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Submit Answer"/>
+                                        <connections>
+                                            <action selector="multipleAnswerButtonPressed" destination="gJu-wQ-9xe" eventType="touchUpInside" id="wPm-Ls-Zri"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -230,6 +233,10 @@
                         <outlet property="multiLabel2" destination="ggA-wQ-md3" id="m32-3E-C2o"/>
                         <outlet property="multiLabel3" destination="LDD-Uj-Xc9" id="lbr-6T-GRR"/>
                         <outlet property="multiLabel4" destination="LEi-Wi-hQ9" id="eka-2D-DN1"/>
+                        <outlet property="multiSwitch1" destination="peX-5e-Lbb" id="wMt-oT-fmy"/>
+                        <outlet property="multiSwitch2" destination="3Gn-es-XeX" id="zQJ-Zw-brl"/>
+                        <outlet property="multiSwitch3" destination="GVC-0U-9aK" id="7xF-HB-Wzq"/>
+                        <outlet property="multiSwitch4" destination="TmG-Df-2L2" id="LAR-m5-ElA"/>
                         <outlet property="multipleStackView" destination="FOO-Cb-1Ok" id="X4n-re-t2U"/>
                         <outlet property="questionLabel" destination="5vf-R0-Aaa" id="AEr-p4-aI4"/>
                         <outlet property="questionProgressView" destination="1uC-uu-Qgz" id="aj9-X8-n3g"/>
