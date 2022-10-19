@@ -18,6 +18,7 @@
 		04810F5E28F7207A009D34C5 /* PersonalityQuizUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04810F5D28F7207A009D34C5 /* PersonalityQuizUITestsLaunchTests.swift */; };
 		04810F6F28F86486009D34C5 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04810F6E28F86486009D34C5 /* QuestionViewController.swift */; };
 		04810F7128F86658009D34C5 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04810F7028F86658009D34C5 /* ResultsViewController.swift */; };
+		04810F7328FF7062009D34C5 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04810F7228FF7062009D34C5 /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		04810F5D28F7207A009D34C5 /* PersonalityQuizUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityQuizUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		04810F6E28F86486009D34C5 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		04810F7028F86658009D34C5 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		04810F7228FF7062009D34C5 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				04810F3C28F72078009D34C5 /* SceneDelegate.swift */,
 				04810F3E28F72078009D34C5 /* IntroductionViewController.swift */,
 				04810F4028F72078009D34C5 /* Main.storyboard */,
+				04810F7228FF7062009D34C5 /* Question.swift */,
 				04810F6E28F86486009D34C5 /* QuestionViewController.swift */,
 				04810F7028F86658009D34C5 /* ResultsViewController.swift */,
 				04810F4328F7207A009D34C5 /* Assets.xcassets */,
@@ -267,6 +270,7 @@
 				04810F3F28F72078009D34C5 /* IntroductionViewController.swift in Sources */,
 				04810F3B28F72078009D34C5 /* AppDelegate.swift in Sources */,
 				04810F6F28F86486009D34C5 /* QuestionViewController.swift in Sources */,
+				04810F7328FF7062009D34C5 /* Question.swift in Sources */,
 				04810F7128F86658009D34C5 /* ResultsViewController.swift in Sources */,
 				04810F3D28F72078009D34C5 /* SceneDelegate.swift in Sources */,
 			);
