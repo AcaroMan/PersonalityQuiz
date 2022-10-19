@@ -8,12 +8,9 @@
 import UIKit
 
 class QuestionViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+    @IBOutlet weak var singleStackView: UIStackView!
+    @IBOutlet weak var multipleStackView: UIStackView!
+    @IBOutlet weak var rangedStackView: UIStackView!
     
     var questions : [Question] = [
         Question (
@@ -41,14 +38,43 @@ class QuestionViewController: UIViewController {
             type: .multiple,
             answers: [
                 Answer(text: "Water Fountain", type: .hydroHomie),
-                Answer(text: "Coffee/Pub, type: .casualDrinker),
+                Answer(text: "Coffee/Pub", type: .casualDrinker),
                 Answer(text: "Tavern", type: .alcoholLover),
-                Answer(text: "House", type: .anonAlcoholic),
+                Answer(text: "House", type: .anonAlcoholic)
             ]
         )
-
-
     ]
+    
+    var questionIndex = 0
+            
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        updateUI()
+        // Do any additional setup after loading the view.
+    }
+    func updateUI(){
+        singleStackView.isHidden = true
+        multipleStackView.isHidden = true
+        rangedStackView.isHidden = true
+        
+        navigationItem.title = "Question #\(questionIndex+1)"
+        
+        let currentQuestion = questions[questionIndex]
+        
+        switch currentQuestion.type{
+        case .single:
+            singleStackView.isHidden = false
+        case .multiple:
+            multipleStackView.isHidden = false
+        case .ranged:
+            rangedStackView.isHidden = false
+            
+        }
+    }
+    
+
+    
     /*
     // MARK: - Navigation
 
