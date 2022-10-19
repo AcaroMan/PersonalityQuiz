@@ -66,13 +66,18 @@ class QuestionViewController: UIViewController {
     ]
     
     var questionIndex = 0
-            
+    var answersChosen: [Answer] = []
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func singleAnswerButtonPressed(_ sender: UIButton) {
+    }
+    
     func updateUI(){
         singleStackView.isHidden = true
         multipleStackView.isHidden = true
