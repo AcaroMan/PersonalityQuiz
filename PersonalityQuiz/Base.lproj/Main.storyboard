@@ -214,9 +214,21 @@
                     </view>
                     <navigationItem key="navigationItem" id="Ont-vh-9xm"/>
                     <connections>
-                        <outlet property="multipleStackView" destination="FOO-Cb-1Ok" id="tt0-Id-eGC"/>
-                        <outlet property="rangedStackView" destination="l0Y-gD-buL" id="ST7-8l-ZKI"/>
-                        <outlet property="singleStackView" destination="FOO-Cb-1Ok" id="Aet-68-yfu"/>
+                        <outlet property="multiLabel1" destination="EdC-Ci-24W" id="kdI-qH-daA"/>
+                        <outlet property="multiLabel2" destination="ggA-wQ-md3" id="m32-3E-C2o"/>
+                        <outlet property="multiLabel3" destination="LDD-Uj-Xc9" id="lbr-6T-GRR"/>
+                        <outlet property="multiLabel4" destination="LEi-Wi-hQ9" id="eka-2D-DN1"/>
+                        <outlet property="multipleStackView" destination="FOO-Cb-1Ok" id="X4n-re-t2U"/>
+                        <outlet property="questionLabel" destination="5vf-R0-Aaa" id="AEr-p4-aI4"/>
+                        <outlet property="questionProgressView" destination="1uC-uu-Qgz" id="aj9-X8-n3g"/>
+                        <outlet property="rangedLabel1" destination="V9T-II-wQC" id="bFK-xh-8bw"/>
+                        <outlet property="rangedLabel2" destination="8C6-k3-qCr" id="SNf-bH-43L"/>
+                        <outlet property="rangedStackView" destination="l0Y-gD-buL" id="NCO-Nx-9cy"/>
+                        <outlet property="singleButton1" destination="Boy-XL-wtg" id="pVc-lO-yKs"/>
+                        <outlet property="singleButton2" destination="fZi-b1-lpr" id="HBa-mh-SWx"/>
+                        <outlet property="singleButton3" destination="gSX-pM-JjL" id="RGj-JM-5Io"/>
+                        <outlet property="singleButton4" destination="N5r-kT-qz3" id="jsZ-MJ-nJ6"/>
+                        <outlet property="singleStackView" destination="XzY-W1-Tuc" id="FQx-0Y-TAz"/>
                         <segue destination="flD-0W-K3A" kind="show" identifier="Results" id="ksd-47-jUH"/>
                     </connections>
                 </viewController>
