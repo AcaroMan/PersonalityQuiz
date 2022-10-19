@@ -188,6 +188,10 @@
                                         <rect key="frame" x="0.0" y="90.333333333333371" width="354" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Submit Answer"/>
+                                        <connections>
+                                            <action selector="multipleAnswerButtonPressed" destination="gJu-wQ-9xe" eventType="touchUpInside" id="igU-Ar-AgD"/>
+                                            <action selector="rangedAnswerButtonPressed" destination="gJu-wQ-9xe" eventType="touchUpInside" id="kdF-P1-D2S"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -242,6 +246,7 @@
                         <outlet property="questionProgressView" destination="1uC-uu-Qgz" id="aj9-X8-n3g"/>
                         <outlet property="rangedLabel1" destination="V9T-II-wQC" id="bFK-xh-8bw"/>
                         <outlet property="rangedLabel2" destination="8C6-k3-qCr" id="SNf-bH-43L"/>
+                        <outlet property="rangedSlider" destination="nNG-Tf-MId" id="ahv-z1-kPn"/>
                         <outlet property="rangedStackView" destination="l0Y-gD-buL" id="NCO-Nx-9cy"/>
                         <outlet property="singleButton1" destination="Boy-XL-wtg" id="pVc-lO-yKs"/>
                         <outlet property="singleButton2" destination="fZi-b1-lpr" id="HBa-mh-SWx"/>
