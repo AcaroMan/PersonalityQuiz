@@ -94,7 +94,7 @@ class QuestionViewController: UIViewController {
         case .multiple:
             updateMultipleStack(using: currentAnswers)
         case .ranged:
-            rangedStackView.isHidden = false
+            updateRangedStack(using: currentAnswers)
             
         }
     }

@@ -35,8 +35,6 @@ enum AlcoholicType{
             return "Damn this wine is really good- you say to yourself while you eat your meal because you cant a single meal without drinking a few glasses."
         case .anonAlcoholic:
             return "What a sad fucker you must be. Drinking alone those full glasses of vodka while feeling depressed about life."
-            <#code#>
         }
     }
 }
-
