@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ahb-XP-zi6">
-                                <rect key="frame" x="0.0" y="385" width="390" height="74.666666666666671"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ahb-XP-zi6">
+                                <rect key="frame" x="0.0" y="384.66666666666669" width="390" height="74.666666666666686"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Que Tipo de Animal Es Tu?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybM-EH-M3b">
                                         <rect key="frame" x="0.0" y="0.0" width="390" height="32.333333333333336"/>
@@ -26,7 +26,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Auy-hT-9AA">
-                                        <rect key="frame" x="0.0" y="40.333333333333329" width="390" height="34.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="40.333333333333314" width="390" height="34.333333333333343"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Começar Teste De Personalidade"/>
                                         <connections>
                                             <segue destination="tly-Ni-Wxd" kind="show" id="1QW-x7-uaG"/>
@@ -39,6 +39,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ahb-XP-zi6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cm9-wt-DQK"/>
+                            <constraint firstItem="ahb-XP-zi6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dOX-fA-pmW"/>
+                            <constraint firstItem="ahb-XP-zi6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hWM-iO-7nf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ahb-XP-zi6" secondAttribute="trailing" id="yr9-Rt-atN"/>
                         </constraints>
                     </view>
@@ -253,7 +255,7 @@
                         <outlet property="singleButton3" destination="gSX-pM-JjL" id="RGj-JM-5Io"/>
                         <outlet property="singleButton4" destination="N5r-kT-qz3" id="jsZ-MJ-nJ6"/>
                         <outlet property="singleStackView" destination="XzY-W1-Tuc" id="FQx-0Y-TAz"/>
-                        <segue destination="flD-0W-K3A" kind="show" identifier="Results" id="ksd-47-jUH"/>
+                        <segue destination="flD-0W-K3A" kind="show" identifier="Results" destinationCreationSelector="showResults:" id="ksd-47-jUH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6uo-sy-Ig3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

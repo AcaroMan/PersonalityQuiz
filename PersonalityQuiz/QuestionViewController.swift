@@ -99,7 +99,6 @@ class QuestionViewController: UIViewController {
     
     @IBAction func multipleAnswerButtonPressed() {
         let currentAnswers = questions[questionIndex].answers
-
         if multiSwitch1.isOn {
             answersChosen.append(currentAnswers[0])
         }
@@ -127,12 +126,16 @@ class QuestionViewController: UIViewController {
 
 
     func nextQuestion(){
+        print("Coming from question " + questions[questionIndex].text)
         questionIndex += 1
+        print(questionIndex)
+        print("Going to question " + questions[questionIndex].text)
         if(questionIndex<questions.count){
+            print("Not finished")
             updateUI()
         }
         else{
-            performSegue(withIdentifier: "ResultsSegue", sender: nil)
+            performSegue(withIdentifier: "Results", sender: nil)
         }
     }
     
@@ -162,6 +165,9 @@ class QuestionViewController: UIViewController {
         }
     }
     
+    @IBSegueAction func showResults(_ coder: NSCoder) -> ResultsViewController? {
+        return  ResultsViewController(coder: coder, responses: answersChosen)
+    }
     func updateSingleStack(using answers:[Answer]){
         singleStackView.isHidden = false
         singleButton1.setTitle(answers[0].text, for: .normal)
