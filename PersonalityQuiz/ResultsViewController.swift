@@ -35,6 +35,13 @@ class ResultsViewController: UIViewController {
             (counts,answer) in
             counts[answer.type,default: 0] += 1
         }
+
+        let frequentAnswersSorted = frequencyOfAnswers.sorted(by: {(pair1,pair2) in
+            return pair1.value > pair2.value
+    })
+        let mostCommonAnswer = frequentAnswersSorted.first!.key
+        print(mostCommonAnswer)
+        
     }
     
 
