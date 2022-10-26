@@ -26,11 +26,16 @@ class ResultsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        calculatePersonalityResult()
         // Do any additional setup after loading the view.
     }
     
-
+    func calculatePersonalityResult(){
+        let frequencyOfAnswers = responses.reduce(into: [:]){
+            (counts,answer) in
+            counts[answer.type,default: 0] += 1
+        }
+    }
     
 
     /*

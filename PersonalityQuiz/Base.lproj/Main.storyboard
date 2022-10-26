@@ -191,7 +191,6 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Submit Answer"/>
                                         <connections>
-                                            <action selector="multipleAnswerButtonPressed" destination="gJu-wQ-9xe" eventType="touchUpInside" id="igU-Ar-AgD"/>
                                             <action selector="rangedAnswerButtonPressed" destination="gJu-wQ-9xe" eventType="touchUpInside" id="kdF-P1-D2S"/>
                                         </connections>
                                     </button>
@@ -255,7 +254,7 @@
                         <outlet property="singleButton3" destination="gSX-pM-JjL" id="RGj-JM-5Io"/>
                         <outlet property="singleButton4" destination="N5r-kT-qz3" id="jsZ-MJ-nJ6"/>
                         <outlet property="singleStackView" destination="XzY-W1-Tuc" id="FQx-0Y-TAz"/>
-                        <segue destination="flD-0W-K3A" kind="show" identifier="Results" destinationCreationSelector="showResults:" id="ksd-47-jUH"/>
+                        <segue destination="flD-0W-K3A" kind="show" identifier="ResultsSegue" destinationCreationSelector="showResults:" id="ksd-47-jUH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6uo-sy-Ig3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -270,8 +269,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jWu-F7-gQD">
-                                <rect key="frame" x="20" y="349" width="350" height="88.333333333333329"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jWu-F7-gQD">
+                                <rect key="frame" x="20" y="349.33333333333331" width="350" height="88.333333333333314"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K0y-24-Eh9">
                                         <rect key="frame" x="0.0" y="0.0" width="350" height="60"/>
@@ -291,8 +290,12 @@
                         <viewLayoutGuide key="safeArea" id="nZc-Z0-Y7N"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="jWu-F7-gQD" firstAttribute="centerY" secondItem="aA6-Rq-k1O" secondAttribute="centerY" id="1Nc-aq-sgP"/>
                             <constraint firstItem="nZc-Z0-Y7N" firstAttribute="trailing" secondItem="jWu-F7-gQD" secondAttribute="trailing" constant="20" id="7LC-Nf-soL"/>
+                            <constraint firstItem="jWu-F7-gQD" firstAttribute="centerY" secondItem="aA6-Rq-k1O" secondAttribute="centerY" id="GED-wG-2Ld"/>
                             <constraint firstItem="jWu-F7-gQD" firstAttribute="leading" secondItem="nZc-Z0-Y7N" secondAttribute="leading" constant="20" id="aeh-2q-Lnu"/>
+                            <constraint firstItem="jWu-F7-gQD" firstAttribute="centerX" secondItem="aA6-Rq-k1O" secondAttribute="centerX" id="hpM-IF-IZF"/>
+                            <constraint firstItem="jWu-F7-gQD" firstAttribute="centerX" secondItem="aA6-Rq-k1O" secondAttribute="centerX" id="xho-yQ-RJa"/>
                         </constraints>
                     </view>
                     <toolbarItems/>

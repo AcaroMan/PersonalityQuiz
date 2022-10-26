@@ -187,6 +187,10 @@ class QuestionViewController: UIViewController {
     }
     
     
+    @IBSegueAction func showResults(_ coder: NSCoder) -> ResultsViewController? {
+        
+            return ResultsViewController(coder: coder,responses: answersChosen)
+    }
     func nextQuestion() {
         questionIndex += 1
         
@@ -203,6 +207,7 @@ class QuestionViewController: UIViewController {
             resultsViewController.responses = answersChosen
         }
     }
+    
     
     /*
     // MARK: - Navigation
