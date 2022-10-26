@@ -9,6 +9,8 @@ import UIKit
 
 class ResultsViewController: UIViewController {
     
+    @IBOutlet weak var answerLabel: UILabel!
+    @IBOutlet weak var definitionLabel: UILabel!
     
     var responses : [Answer]
     
@@ -28,6 +30,7 @@ class ResultsViewController: UIViewController {
         super.viewDidLoad()
         calculatePersonalityResult()
         // Do any additional setup after loading the view.
+        navigationItem.hidesBackButton = true
     }
     
     func calculatePersonalityResult(){
@@ -36,11 +39,13 @@ class ResultsViewController: UIViewController {
             counts[answer.type,default: 0] += 1
         }
 
-        let frequentAnswersSorted = frequencyOfAnswers.sorted(by: {(pair1,pair2) in
+        let mostCommonAnswer = frequencyOfAnswers.sorted(by: {(pair1,pair2) in
             return pair1.value > pair2.value
-    })
-        let mostCommonAnswer = frequentAnswersSorted.first!.key
-        print(mostCommonAnswer)
+        }).first!.key
+        
+        answerLabel.text = "You are offically a \(mostCommonAnswer.rawValue)"
+        definitionLabel.text = mostCommonAnswer.definition
+        
         
     }
     

@@ -23,12 +23,12 @@ struct Answer{
     var type: AlcoholicType
 }
 
-enum AlcoholicType{
-    case hydroHomie, casualDrinker,alcoholLover,anonAlcoholic
+enum AlcoholicType: String {
+    case hydroHomie = "Hydro Homie" , casualDrinker = "Casual Drinker",alcoholLover = "Alchohol Enjoyer",anonAlcoholic = "Anon Alcholic"
     var definition:String{
         switch self{
         case .hydroHomie:
-            return "You dont drink much. Only drink your 1.5 liter+o of daily water and despise anyone who drinks anything else."
+            return "You dont drink much. Only drink your 1.5 liter of daily water and despise anyone who drinks anything else."
         case .casualDrinker:
             return "You like to casually drink those soft drinks like beer. You might drink a few of them or just go with 15 pints in a row."
         case .alcoholLover:
